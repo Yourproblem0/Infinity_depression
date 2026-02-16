@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1620041814523074148}
   - component: {fileID: 4369799611531061073}
   - component: {fileID: 3560764082636036803}
+  - component: {fileID: 1976314883446119635}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6294344652082491665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -130,6 +131,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoadMover
   direction: {x: 0, y: 0, z: -1}
   MoveSpeed: 5
+--- !u!65 &1976314883446119635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294344652082491665}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 0.8147948, z: 10}
+  m_Center: {x: 0, y: -0.4073974, z: 0}
 --- !u!1 &8187156867907573202
 GameObject:
   m_ObjectHideFlags: 0
