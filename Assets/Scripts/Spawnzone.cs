@@ -7,9 +7,11 @@ public class Spawnzone : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log("triggered!");
+
         //Sense when something has left the collider zone
         //And tell the spawner to create a new piece
-        spawner.SpawnPiece();
+        //spawner.SpawnPiece();
 
     }
 }

@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadSpawner
   spawnPoint: {fileID: 1625142863}
-  roadpiece: {fileID: 6294344652082491665, guid: dadd0d0429c5a5e4eba8d2c7d34b7f04, type: 3}
+  roadPiece: {fileID: 3560764082636036803, guid: dadd0d0429c5a5e4eba8d2c7d34b7f04, type: 3}
 --- !u!1 &192210167
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +242,7 @@ Transform:
   m_GameObject: {fileID: 192210167}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.66, z: -6.11}
+  m_LocalPosition: {x: -0.03, y: 0.66, z: -14.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -552,7 +552,7 @@ Transform:
   m_GameObject: {fileID: 413561889}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: 0, z: 9.81}
+  m_LocalPosition: {x: 0.12, y: 0, z: 12.54}
   m_LocalScale: {x: 4.926332, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -577,8 +577,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4063267, y: 1, z: 0.90265125}
-  m_Center: {x: -0.020777624, y: 0, z: 0.048674393}
+  m_Size: {x: 0.22415668, y: 2.4933395, z: 1.6605853}
+  m_Center: {x: -0.025110448, y: 0.74667, z: 0.6097612}
 --- !u!54 &413561892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -804,8 +804,8 @@ Transform:
   m_GameObject: {fileID: 1625142862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.11, y: 0, z: 9.91}
-  m_LocalScale: {x: 1, y: 1, z: -0.59546}
+  m_LocalPosition: {x: 0.11, y: 0, z: 12.5}
+  m_LocalScale: {x: 1, y: 1, z: -2.762696}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 113820589}

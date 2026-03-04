@@ -2916,8 +2916,8 @@
     "m_ObjectId": "932e3d4506c14c9a8422c25e8df35f47",
     "m_Title": "Makes things change colors, lerping with sine wave",
     "m_Position": {
-        "x": -968.0000610351563,
-        "y": -427.0000305175781
+        "x": -968.0,
+        "y": -427.0
     }
 }
 
