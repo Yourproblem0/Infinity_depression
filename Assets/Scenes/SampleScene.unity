@@ -166,6 +166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoadSpawner
   spawnPoint: {fileID: 1625142863}
   roadPiece: {fileID: 3560764082636036803, guid: dadd0d0429c5a5e4eba8d2c7d34b7f04, type: 3}
+  building: {fileID: 190849982555409179, guid: 4ba5cd594b80a21409f3bc7e1c722ddb, type: 3}
+  tree: {fileID: 5016873034348029657, guid: d7e7e9b662eac034a87d215a0480c264, type: 3}
 --- !u!1 &192210167
 GameObject:
   m_ObjectHideFlags: 0

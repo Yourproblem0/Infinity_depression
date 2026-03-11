@@ -9,6 +9,7 @@ public class RoadPiece : MonoBehaviour
     public Transform EndPos;
 
     [SerializeField] Transform[] buildingSpawnPoints;
+    [SerializeField] Transform[] treeSpawnPoints;
 
     //Moves road towards the player
     private void FixedUpdate()
@@ -20,6 +21,11 @@ public class RoadPiece : MonoBehaviour
     public Transform[] GetBuildingSpawnPoint()
     {
         return buildingSpawnPoints;
+    }
+
+    public Transform[] GetTreeSpawnPoints()
+    {
+        return treeSpawnPoints;
     }
 
 }
