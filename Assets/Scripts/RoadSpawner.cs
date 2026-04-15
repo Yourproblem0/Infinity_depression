@@ -97,7 +97,7 @@ public class RoadSpawner : MonoBehaviour
     }
     RoadPiece SpawnEndAt(Vector3 endPosition)
     {
-        int roadPieceIdx = Random.Range(0, roadPieces.Length);
+        int roadPieceIdx = 0;
 
         roadPieceIdx = 0; //Assume we ude index zero but...
         //If we previously already had a clean bit of road
