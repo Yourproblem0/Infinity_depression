@@ -80,7 +80,7 @@ public class RoadSpawner : MonoBehaviour
         int roadPieceIdx = 0; //Assume we ude index zero but...
         //If we previously already had a clean bit of road
         //And we have to wait for 3 sec
-        if (previousRoadPieceIdx == 0 && Time.time>3f)
+        if (previousRoadPieceIdx == 0 && levelmanager.GameTime>3f)
         {
             //Then choose a random road piece
             roadPieceIdx = Random.Range(0, roadPieces.Length);
@@ -101,7 +101,7 @@ public class RoadSpawner : MonoBehaviour
 
         roadPieceIdx = 0; //Assume we ude index zero but...
         //If we previously already had a clean bit of road
-        if (previousRoadPieceIdx == 0 && Time.time>3f)
+        if (previousRoadPieceIdx == 0 && levelmanager.GameTime > 3f)
         {
             //Then choose a random road piece
             roadPieceIdx = Random.Range(0, roadPieces.Length);
@@ -126,7 +126,7 @@ public class RoadSpawner : MonoBehaviour
             if (Random.value < 0.25f) return;//Get out of here if we get less than 25%
 
 
-            //Building rotation
+            //Building rotation 
             int randomNumber = Random.Range(0, 3);
             Quaternion buildingRotation = Quaternion.Euler(0f, randomNumber * 90f, 0f);
 

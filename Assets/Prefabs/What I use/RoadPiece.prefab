@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 92642364723780974}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.9, y: -0.02, z: 1.736}
+  m_LocalPosition: {x: 8.9, y: -0.6999999, z: 1.736}
   m_LocalScale: {x: 1, y: 1, z: 0.5984}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 397328239988055805}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.57, y: -0.02000004, z: 2.085}
+  m_LocalPosition: {x: 10.57, y: -0.70000005, z: 2.085}
   m_LocalScale: {x: 1, y: 1, z: 0.5984}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -121,7 +121,7 @@ Transform:
   m_GameObject: {fileID: 1853075158153812428}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.45, y: -0.02000004, z: 2.35}
+  m_LocalPosition: {x: 9.45, y: -0.7, z: 2.35}
   m_LocalScale: {x: 1, y: 1, z: 0.5984}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -152,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 2071686391272008456}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.4, y: -0.02000004, z: 1.748}
+  m_LocalPosition: {x: -9.4, y: -0.70000005, z: 1.748}
   m_LocalScale: {x: 1, y: 1, z: 0.5984}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -346,7 +346,7 @@ Transform:
   m_GameObject: {fileID: 5457727570355731981}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.04, y: -0.23999998, z: 2.12}
+  m_LocalPosition: {x: -11.04, y: -0.91999996, z: 2.12}
   m_LocalScale: {x: 1, y: 1, z: 0.5984}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -522,7 +522,7 @@ Transform:
   m_GameObject: {fileID: 6782101088681124438}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.81, y: -0.03, z: 2.23}
+  m_LocalPosition: {x: -8.81, y: -0.7099999, z: 2.23}
   m_LocalScale: {x: 1, y: 1, z: 0.5984}
   m_ConstrainProportionsScale: 0
   m_Children: []

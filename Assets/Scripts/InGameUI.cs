@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
@@ -8,6 +9,14 @@ public class InGameUI : MonoBehaviour
     [SerializeField] TMP_Text timeSurvivedTextObject;
     [SerializeField] TMP_Text speedTextObject;
     [SerializeField] TMP_Text endStatsTextObject;
+
+    [Space(10f)]
+
+    //buttons
+    [SerializeField] Button tryAgainButton;
+    [SerializeField] Button ExitButton;
+
+    [Space(10f)]
 
     //screen
     [SerializeField] GameObject hub;
@@ -21,6 +30,9 @@ public class InGameUI : MonoBehaviour
         //Fetch level manager from the scene
         levelManager = FindAnyObjectByType<LevelManager>();
 
+        //Add listeners
+        tryAgainButton.onClick.AddListener(() => levelManager.ResetLevel());
+        ExitButton.onClick.AddListener(() => levelManager.QuitGame());
     }
 
     private void Start()
@@ -58,5 +70,6 @@ public class InGameUI : MonoBehaviour
 
         endStatsTextObject.text = $"Time survived:{levelManager.GameTime:F2}";
     }
+
 
 }

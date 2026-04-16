@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -58,6 +59,23 @@ public class LevelManager : MonoBehaviour
     {
         currentGameState = GameState.Gameover;
         inGameUI.DisplayGameOverScreen();
+    }
+
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }//67
+
+    public void QuitGame()
+    {
+        //Tell Unity to use only Unity quit when unity and other when outside of unity
+#if UNITY_EDITOR
+        //Can only work in unity
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        //Can use in applications
+        Application.Quit();
+#endif
     }
 
 }
