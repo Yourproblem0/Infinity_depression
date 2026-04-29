@@ -9,6 +9,7 @@ public class InGameUI : MonoBehaviour
     [SerializeField] TMP_Text timeSurvivedTextObject;
     [SerializeField] TMP_Text speedTextObject;
     [SerializeField] TMP_Text endStatsTextObject;
+    [SerializeField] TMP_Text coinsTextObject;
 
     [Space(10f)]
 
@@ -39,6 +40,9 @@ public class InGameUI : MonoBehaviour
     {
         //Hidegame over screen
         gameOverScreen.SetActive(false);
+
+        //show inital coins
+        UpdateCoins();
     }
 
     private void Update()
@@ -49,6 +53,11 @@ public class InGameUI : MonoBehaviour
            UpdateTheSpeedText();
         }
         
+    }
+
+    public void UpdateCoins()
+    {
+        coinsTextObject.text = $"Coins collected:\n{levelManager.Coins}";
     }
 
     private void UpdateTimeText()
@@ -68,7 +77,8 @@ public class InGameUI : MonoBehaviour
         gameOverScreen.SetActive(true);
         hub.SetActive(false);
 
-        endStatsTextObject.text = $"Time survived:{levelManager.GameTime:F2}";
+        endStatsTextObject.text = $"Time survived:{levelManager.GameTime:F2}"+
+            $"\nYou collected:{ levelManager.Coins}";
     }
 
 

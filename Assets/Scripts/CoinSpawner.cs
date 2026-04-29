@@ -33,6 +33,7 @@ public class CoinSpawner : MonoBehaviour
         //Start coroutines
         StartCoroutine(SpawnCoins());
         StartCoroutine(LookAhead());
+        StartCoroutine(HopBetweenLanes());
 
     }
 
@@ -68,6 +69,22 @@ public class CoinSpawner : MonoBehaviour
         //Yes, it is available
         return true;
     }
+
+    IEnumerator HopBetweenLanes()
+    {
+        while (levelManager.CurrentGameState == GameState.Running)
+        {
+            yield return StartCoroutine(WaitForRandomRange(2f, 5f));
+            TrytoChangeLane();
+        }
+    }
+
+    IEnumerator WaitForRandomRange(float minTime, float maxTime)
+    {
+        float timeToWait = Random.Range(minTime, maxTime);
+        yield return new WaitForSeconds(timeToWait);
+    }
+
 
     private void TrytoChangeLane()
     {

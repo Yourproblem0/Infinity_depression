@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa2c26caba63fc4f8cc7db486493cae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  coinObject: {fileID: 4586640870357302124}
 --- !u!135 &5580726052596772867
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -97,8 +98,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.402395
-  m_Center: {x: 0, y: 0.39, z: 0}
+  m_Radius: 0.30167818
+  m_Center: {x: 0, y: -0.5044229, z: 0}
 --- !u!1001 &4048099376693910663
 PrefabInstance:
   m_ObjectHideFlags: 0

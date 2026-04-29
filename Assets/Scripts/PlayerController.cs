@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,6 +12,8 @@ public class PlayerController : MonoBehaviour
     //Are we jumping
     [SerializeField] bool isJumping;
 
+    List<Rigidbody> rigidBodies = new List<Rigidbody>();
+
     private void Awake()
 
     {
@@ -19,6 +23,15 @@ public class PlayerController : MonoBehaviour
 
         animator.SetBool("IsRunning", true);
         isJumping = false;
+
+        //Find all the rigidbodies
+        rigidBodies.AddRange(GetComponentsInChildren<Rigidbody>());
+
+        //DIsable rigidbodies
+        foreach(var rigidBody in rigidBodies)
+        {
+            rigidBody.isKinematic = true;
+        }
     }
 
     private void Update()
@@ -67,6 +80,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+    private void OnGameOver()
+    {
+        levelManager.DeclareGameOver();
+        animator.enabled = false;
+        foreach(var rigidBody in rigidBodies)
+        {
+            rigidBody.isKinematic = false;
+            rigidBody.AddForce(Vector3.forward * levelManager.GetSpeed(), ForceMode.Impulse);
+        }
+    }
 
 }

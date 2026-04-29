@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
 
     public float GameTime { get; set; }
 
+    public int Coins { get; private set; } //Only level manager can change how many coins, anyone can ask for the information tho
+
     //public property
     public GameState CurrentGameState => currentGameState;
     //hidden private field
@@ -48,6 +50,15 @@ public class LevelManager : MonoBehaviour
     public float GetSpeed()
     {
         return currentGameSpeed;
+    }
+
+    public void AddCoin()
+    {
+        //Increment coins
+        Coins++;
+
+        //update UI
+        inGameUI.UpdateCoins();
     }
 
     internal void CoinCollected()
