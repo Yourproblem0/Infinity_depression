@@ -306,7 +306,7 @@ MonoBehaviour:
   - {fileID: 3343391913636967944, guid: dadd0d0429c5a5e4eba8d2c7d34b7f04, type: 3}
   - {fileID: 4764028939317299435, guid: 98da092fc75f78f4f92996f29d8c7973, type: 3}
   building: {fileID: 6404340766498064718, guid: c2f0cf2d2eaf57348afa4813860330c0, type: 3}
-  tree: {fileID: 5016873034348029657, guid: d7e7e9b662eac034a87d215a0480c264, type: 3}
+  tree: {fileID: 9072730020168284174, guid: 66482b930b8ce7d4cb8d1c93aaf5d1ec, type: 3}
   obstacles:
   - {fileID: 1204123879369068660, guid: 860cf3eb74f37ca4dbac34c362053f0e, type: 3}
   - {fileID: 3013378158067793440, guid: 4dfc69355e5a70449936f17d93f82fd4, type: 3}
