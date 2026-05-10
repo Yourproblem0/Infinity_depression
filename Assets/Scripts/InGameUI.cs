@@ -68,8 +68,8 @@ public class InGameUI : MonoBehaviour
     private void UpdateTheSpeedText()
     {
         speedTextObject.text = $"Speed:{levelManager.GetSpeed()}";
-        if (levelManager.GetSpeed() > 7) speedTextObject.color = Color.yellow;
-        if (levelManager.GetSpeed() > 10) speedTextObject.color = Color.red;
+        if (levelManager.GetSpeed() > 5) speedTextObject.color = Color.yellow;
+        if (levelManager.GetSpeed() > 7) speedTextObject.color = Color.red;
     }
 
     public void DisplayGameOverScreen()

@@ -8,6 +8,7 @@ public class RoadSpawner : MonoBehaviour
     [SerializeField] RoadPiece[] roadPieces;
     private int previousRoadPieceIdx;
     [SerializeField] GameObject building;
+    [SerializeField] GameObject building2;
     [SerializeField] GameObject tree;
     [SerializeField] Obstacle[] obstacles;
    
@@ -157,6 +158,5 @@ public class RoadSpawner : MonoBehaviour
 
         }
     }
-
 
 }
